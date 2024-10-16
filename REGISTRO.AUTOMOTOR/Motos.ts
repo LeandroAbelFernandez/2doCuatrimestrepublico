@@ -1,10 +1,10 @@
 export class Moto{
     private marca:string;
-    private modelo:number;
+    private modelo:string;
     private año:number;
     private patente:string;
 
-    constructor(marca:string,modelo:number,año:number, patente:string){
+    constructor(marca:string,modelo:string,año:number, patente:string){
         this.marca=marca;
         this.modelo=modelo;
         this.año=año;
@@ -15,7 +15,7 @@ export class Moto{
         return this.marca;
     }
 
-    public getModelo(): number {
+    public getModelo(): string {
         return this.modelo;
     }
     public getAño(): number {
@@ -30,7 +30,7 @@ export class Moto{
     public setMarca(marca: string): void {
         this.marca = marca;
     }
-    public setModelo(modelo: number): void {
+    public setModelo(modelo: string): void {
         this.modelo = modelo;
     }    
     public setAño(año:number):void{
