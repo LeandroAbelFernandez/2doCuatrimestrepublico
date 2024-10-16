@@ -17,4 +17,18 @@ let camion4=new Camion ("FORD","F-350",1982, "ERT354");
 
 let registro = new Registroautomotor ([auto1,auto2,auto3],[moto1,moto2],[camion1,camion2,camion3,camion4]);
 
+
 console.log(registro);
+
+let nuevoauto=new Auto ("generico","modgen",2024,"eee000");
+registro.agregarAuto(nuevoauto);
+console.log("***AGREGO AUTO***", registro.getRegistro1());
+
+let nuevamoto=new Moto ("Mot.gen","masgen",2024,"444ppp");
+registro.agregarMoto(nuevamoto);
+console.log("***AGREGO MOTO***", registro.getRegistro2());
+
+let nuevocamion=new Camion ("Camion.gen","gencam",2024,"www444");
+registro.agregarCamion(nuevocamion);
+console.log("***AGREGO CAMION***", registro.getRegistro3());
+

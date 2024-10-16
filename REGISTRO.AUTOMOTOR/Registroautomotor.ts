@@ -16,6 +16,21 @@ export class Registroautomotor{
         this.registro3 = registro3;
 
     }
+     // Getters
+     public getRegistro1 (): Auto[]{
+        return this.registro1;
+    }
+    public getRegistro2 (): Moto[]{
+        return this.registro2;
+    }
+    public getRegistro3 (): Camion[]{
+        return this.registro3;
+    }
+      // Setters
+    // public setMarca(marca: string): void {
+    //     this.marca = marca;
+    // }
+    
     public agregarAuto(auto: Auto): void {
         this.registro1.push(auto);
     }
