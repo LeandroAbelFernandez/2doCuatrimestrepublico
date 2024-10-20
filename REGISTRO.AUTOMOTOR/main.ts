@@ -20,6 +20,8 @@ let registro = new Registroautomotor ([auto1,auto2,auto3],[moto1,moto2],[camion1
 
 console.log(registro);
 
+// AGREGAR VEHICULO
+
 let nuevoauto=new Auto ("generico","modgen",2024,"eee000");
 registro.agregarAuto(nuevoauto);
 console.log("***AGREGO AUTO***", registro.getRegistro1());
@@ -31,4 +33,18 @@ console.log("***AGREGO MOTO***", registro.getRegistro2());
 let nuevocamion=new Camion ("Camion.gen","gencam",2024,"www444");
 registro.agregarCamion(nuevocamion);
 console.log("***AGREGO CAMION***", registro.getRegistro3());
+
+//MODIFICAR VEHICULO
+let nuevoauto2 = new Auto("FORD", "K", 2010, "NIO283");
+registro.modificarVehiculo("eee000", nuevoauto2, undefined, undefined);
+console.log("***MODIFICO AUTO***", registro.getRegistro1());
+
+let nuevamoto2 = new Moto("MOTOMEL", "S3", 2009, "123MOT");
+registro.modificarVehiculo("444ppp", undefined, nuevamoto2,undefined);
+console.log("***MODIFICO MOTO***", registro.getRegistro2());
+
+let nuevocamion2 = new Camion("NEWCAMION", "MION", 2023, "POI289");
+registro.modificarVehiculo("www444", undefined, undefined, nuevocamion2);
+console.log("***MODIFICO CAMION***", registro.getRegistro3());
+
 

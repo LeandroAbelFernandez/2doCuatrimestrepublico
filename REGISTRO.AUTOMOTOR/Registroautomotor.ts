@@ -50,11 +50,11 @@ export class Registroautomotor{
     public modificarVehiculo(patente: string, nuevoauto?:Auto, nuevamoto?:Moto, nuevocamion?:Camion):void{
         this.eliminarVehiculo(patente);
         if(nuevoauto){
-         this.agregarAuto;
+         this.agregarAuto (nuevoauto);
         }else if (nuevamoto){
-        this.agregarMoto;
+        this.agregarMoto (nuevamoto);
         }else if (nuevocamion){
-        this.agregarCamion
+        this.agregarCamion (nuevocamion)
         }
     }
 }
