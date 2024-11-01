@@ -1,42 +1,8 @@
-export class Camion{
-    private marca:string;
-    private modelo:string;
-    private año:number;
-    private patente:string;
 
-    constructor(marca:string,modelo:string,año:number, patente:string){
-        this.marca=marca;
-        this.modelo=modelo;
-        this.año=año;
-        this.patente=patente;
-    }
-    // Getters
-    public getMarca(): string {
-        return this.marca;
-    }
+    import {Vehiculo} from "./Vehiculo";
 
-    public getModelo(): string {
-        return this.modelo;
+    export class Camion extends Vehiculo {
+        constructor(marca: string, modelo: string, año: number, patente: string) {
+            super(marca, modelo, año, patente);
+        }
     }
-    public getAño(): number {
-        return this.año;
-    }
-    public getPatente(): string {
-        return this.patente;
-    }
-
-
-    // Setters
-    public setMarca(marca: string): void {
-        this.marca = marca;
-    }
-    public setModelo(modelo: string): void {
-        this.modelo = modelo;
-    }    
-    public setAño(año:number):void{
-        this.año = año;
-    }
-    public setPatente(patente:string){
-        this.patente = patente;
-    }
-}

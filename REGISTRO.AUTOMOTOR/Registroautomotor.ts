@@ -3,14 +3,12 @@ import {Moto} from "./Motos";
 import {Camion} from "./Camiones";
 
 export class Registroautomotor{
-    // private nombre:string;
     private registro1:Auto[];
     private registro2:Moto[];
     private registro3:Camion[];
 
 
     constructor(registro1:Auto[], registro2:Moto[],registro3:Camion[]){
-        // this.nombre = nombre;
         this.registro1 = registro1;
         this.registro2 = registro2;
         this.registro3 = registro3;
@@ -26,10 +24,6 @@ export class Registroautomotor{
     public getRegistro3 (): Camion[]{
         return this.registro3;
     }
-      // Setters
-    // public setMarca(marca: string): void {
-    //     this.marca = marca;
-    // }
     
     public agregarAuto(auto: Auto): void {
         this.registro1.push(auto);
